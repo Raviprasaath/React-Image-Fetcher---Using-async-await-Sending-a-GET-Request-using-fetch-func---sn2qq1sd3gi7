@@ -2,12 +2,13 @@ import React, { useState, useEffect } from 'react';
 import '../styles/App.css';
 import { Loader } from './Loader';
 import { PhotoFrame } from './PhotoFrame';
+
 const App = () => {
   const [id, setId] = useState('');
   const [photoData, setPhotoData] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
-   const handleInputChange = (e) => {
+  const handleInputChange = (e) => {
     setId(e.target.value);
   };
 
@@ -47,9 +48,7 @@ const App = () => {
         )
       )}
     </div>
-
-  
-}
-
+  );
+};
 
 export default App;
